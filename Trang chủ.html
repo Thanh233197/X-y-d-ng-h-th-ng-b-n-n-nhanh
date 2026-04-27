@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lý Hoàng Thanh</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">PORTFOLIO</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Trang chủ</a>
+                <a href="#about" class="hover:text-blue-600 transition">Giới thiệu</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Kỹ năng</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Dự án</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-xl font-semibold text-blue-600 mb-2">Xin chào, mình là</h2>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Lý Hoàng Thanh</h1>
+                <p class="text-2xl text-gray-600 mb-6 font-medium">Sinh viên Công nghệ thông tin</p>
+                <p class="text-gray-500 max-w-md mb-8 leading-relaxed">
+                    Đam mê lập trình web và học hỏi các công nghệ mới. Hiện đang là sinh viên tại Trường Đại học Nam Cần Thơ.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg">Liên hệ ngay</a>
+                    <div class="flex items-center space-x-4 text-2xl ml-6">
+                        <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25"></div>
+                    <!-- Thay ảnh avatar của bạn vào đây -->
+                    <img src="https://lh3.googleusercontent.com/d/15Rk-LwvkoU8mNZFO_v_Tw9bWw-iIBgJ1" alt="Avatar" class="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 italic">Về bản thân</h2>
+            <p class="text-lg text-gray-600 leading-loose">
+                Mình là một người năng động, thích khám phá và giải quyết vấn đề thông qua mã nguồn. 
+                Với nền tảng kiến thức từ trường đại học và các khóa học tự học, mình mong muốn trở thành một 
+                <strong>Fullstack Developer</strong> trong tương lai.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 underline decoration-blue-500 underline-offset-8">Kỹ năng chính</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border-b-4 border-blue-500">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="font-bold">HTML/CSS</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border-b-4 border-blue-400">
+                    <i class="fab fa-js text-5xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">JavaScript</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border-b-4 border-blue-600">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-4"></i>
+                    <h3 class="font-bold">ReactJS</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border-b-4 border-gray-700">
+                    <i class="fab fa-python text-5xl text-blue-700 mb-4"></i>
+                    <h3 class="font-bold">Python</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Dự án tiêu biểu</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Dự án 1 (GitHub link cập nhật tại đây) -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-2xl">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format" alt="Fast Food Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-bold px-2.5 py-0.5 rounded">Project 1</span>
+                            <i class="fab fa-github text-xl text-gray-400"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Hệ thống Bán Đồ Ăn Nhanh</h3>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                            Xây dựng hệ thống quản lý bán hàng đồ ăn nhanh, hỗ trợ các chức năng đặt hàng, quản lý sản phẩm và doanh thu.
+                        </p>
+                        <!-- LINK GITHUB CỦA BẠN -->
+                        <a href="https://github.com/Thanh233197/X-y-d-ng-h-th-ng-b-n-n-nhanh/tree/main" target="_blank" class="inline-flex items-center justify-center w-full bg-blue-600 text-white px-4 py-2.5 rounded-lg font-semibold hover:bg-gray-900 transition-colors duration-300">
+                            Xem trên GitHub <i class="ml-2 fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bạn có thể thêm Project 2, 3 tương tự ở đây -->
+                
+            </div>
+        </div>
+    </section>
+<section id="homework" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">Danh Sách Bài Tập</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600">Tổng hợp các bài tập thực hành trong quá trình học tập</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bài tập 1 -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://lh3.googleusercontent.com/d/1CWi59MVaxTJKti297U_vu4eEdxT8v7bh" alt="Bài tập 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Bài tập 01</span>
+                        <h3 class="font-bold text-xl mt-2 mb-4">BÁO CÁO PHÂN TÍCH TYPOGRAPHY TỐI ƯU HÓA TRẢI NGHIỆM ĐỌC </h3>
+                        <a href="https://drive.google.com/file/d/1CWi59MVaxTJKti297U_vu4eEdxT8v7bh/view?usp=drive_link" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">Xem file Drive</a>
+                    </div>
+                </div>
+
+                <!-- Bài tập 2 -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://lh3.googleusercontent.com/d/1ZYjPlwFx38dfOD5toHKh4exYv6nwNJO1" alt="Bài tập 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Bài tập 02</span>
+                        <h3 class="font-bold text-xl mt-2 mb-4">Lộ trình tạo Mobile App: Từ Ý tưởng đến App Store</h3>
+                        <a href="https://drive.google.com/file/d/1ZYjPlwFx38dfOD5toHKh4exYv6nwNJO1/view?usp=drive_link" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">Xem file Drive</a>
+                    </div>
+                </div>
+
+                <!-- Bài tập 3 -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://lh3.googleusercontent.com/d/1OOViXiGJuUo2EI20GSBT7JmfBZpzqgo1" alt="Bài tập 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Bài tập 03</span>
+                        <h3 class="font-bold text-xl mt-2 mb-4">Phân tích logo</h3>
+                        <a href="https://drive.google.com/file/d/1CZ94W03LesNORlseN08Spf-SUmTqwVzX/view?usp=drive_link" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">Xem file Drive</a>
+                    </div>
+                </div>
+
+                <!-- Bài tập 4 -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://lh3.googleusercontent.com/d/1WxU04SvhpA-jzIuGzwVXjF4yOOP-qy8F" alt="Bài tập 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Bài tập 04</span>
+                        <h3 class="font-bold text-xl mt-2 mb-4">Chụp ảnh phong cảnh</h3>
+                        <a href="https://drive.google.com/file/d/1WxU04SvhpA-jzIuGzwVXjF4yOOP-qy8F/view?usp=drive_link" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">Xem file Drive</a>
+                    </div>
+                </div>
+
+                <!-- Bài tập 5 -->
+                <div class="card-zoom bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                    <div class="overflow-hidden h-52">
+                        <img src="https://lh3.googleusercontent.com/d/1N6IvlwEb7PG2E31iyBVimv8t_Dwqut1R" alt="Bài tập 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Bài tập 05</span>
+                        <h3 class="font-bold text-xl mt-2 mb-4">Thương hiệu VNG</h3>
+                        <a href="https://drive.google.com/file/d/1N6IvlwEb7PG2E31iyBVimv8t_Dwqut1R/view?usp=drive_link" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 transition">Xem file Drive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Kết nối với mình</h2>
+            <p class="mb-10 opacity-90">Đừng ngần ngại liên hệ nếu bạn có bất kỳ câu hỏi hay cơ hội hợp tác nào!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <span>lyhoangthanh312@gmail.com</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-phone text-2xl"></i>
+                    <span>0392299514</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 - Bản quyền thuộc về Lý Hoàng Thanh</p>
+    </footer>
+
+</body>
+</html>
